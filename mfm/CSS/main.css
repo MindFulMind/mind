@@ -1,3 +1,7 @@
+.container-fluid{
+    padding: 0;
+}
+
 .navheader a{
     text-decoration: none; /* 링크의 밑줄 제거 */
     color: inherit; /* 링크의 색상 제거 */
@@ -33,6 +37,11 @@
     width: 160px;
 }
 
+.navbar{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+
 .submenu {
     visibility: hidden;
     padding-right: 40px;
@@ -59,20 +68,20 @@
     padding-left: 0px;
 }
 
-.header-content{
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate( -50%, -10% );
-    color: white;
-}
-
-.back .backimg{
+.back_img{
     width: 100%;
 }
 
-.back ul{
+.sub-content{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
+}
+
+.sub-content h1{
+    font-weight: bold;
+}
+
+.sub-bar ul{
     list-style: none;
     position: absolute;
     top: 42%;
@@ -85,12 +94,12 @@
     padding-right: 0px;
 }
 
-.back a{
+.sub-bar a{
     text-decoration: none;
     color: inherit;
 }
 
-.back li{
+.sub-bar li{
     width: 180px;
     float: left;
     padding-top: 15px;
