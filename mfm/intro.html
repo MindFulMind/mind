@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS\main.css">
+    <title>Document</title>
+    <style>
+        .img{
+            position: relative;
+            background-image: url("intro_back1.gif");
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .img-cover{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        .img .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 130px;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .img .content a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body> 
+    <div class="img">
+        <div class="content">
+            <p><a href="https://ecampus.chungbuk.ac.kr/ultra/stream">MEDITATION</a></p>
+        </div>
+        <div class="img-cover"></div>
+    </div>
+
+    <audio autoplay>
+        <source src="back_sound.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

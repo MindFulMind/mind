@@ -1,0 +1,110 @@
+.navheader a{
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: inherit; /* 링크의 색상 제거 */
+}
+
+.navheader{
+    margin-top: 20px;
+}
+
+.navheader .navsel{
+    margin-right: 50px;
+}
+
+.navheader .navsel li{
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navheader .navsel .mainmenu li a:hover{
+    background-color: grey;
+    color: white;
+}
+
+.navheader .navhead{
+    margin-left: 70px;
+}
+
+.navsel > li{
+    float: left;
+    position: relative;
+    width: 160px;
+}
+
+.submenu {
+    visibility: hidden;
+    padding-right: 40px;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    position: absolute;
+    background-color: white;
+    width: 160px;
+}
+
+.navsel > li:hover .submenu{
+    visibility: visible;
+}
+
+.submenu > li > a:hover{
+    text-decoration: underline;
+}
+
+.submenu li{
+    padding-top: 20px;
+}
+
+.submenu > ul{
+    padding-left: 0px;
+}
+
+.header-content{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate( -50%, -10% );
+    color: white;
+}
+
+.back .backimg{
+    width: 100%;
+}
+
+.back ul{
+    list-style: none;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate( -50%, 0% );
+    box-shadow: 2px 2px 5px rgb(191, 191, 191);
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.back a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.back li{
+    width: 180px;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.info-sub{
+  border-radius: 35px;
+  box-shadow: 2px 2px 5px rgb(191, 191, 191);
+  background-color: rgb(255, 255, 255);
+}
+
+.info-sub li a:hover{
+    text-decoration: underline;
+}
