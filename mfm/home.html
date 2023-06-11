@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS\home.css">
+    <title>MindFulMind</title>
+    <style>
+        #header {
+            background-image: url('home.jpg');
+            background-size: cover;
+            height: 850px;
+            color: white;
+        }
+        #menu {
+            background-image: url('menu.jpg');
+            background-size: cover;
+            height: 600px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar navbar-light text-black navbarmenu">
+            <div class="container-fluid navheader">
+                <div class="navbar-header navhead">
+                    <a class="navbar-brand" href="home.html" style="font-size: 30px;">MindFulMind</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right navsel">
+                    <li><a href="way.html" class="mainmenu" style="font-size: 20px;">INFO</a>
+                        <ul class="submenu">
+                            <li><a href="way.html">WAY</a></li>
+                            <li><a href="effect.html">EFFECT</a></li>
+                            <li><a href="kind.html">KIND</a></li>
+                            <li><a href="mbti.html">MBTI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="mainmenu" style="font-size: 20px;">MEDITATION</a>
+                        <ul class="submenu">
+                            <li><a href="#">TIMER</a></li>
+                            <li><a href="#">VEDIO</a></li>
+                            <li><a href="#">CHALLENGE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="spot.html" class="mainmenu" style="font-size: 20px;">PLACE</a>
+                        <ul class="submenu">
+                            <li><a href="spot.html">SPOT</a></li>
+                            <li><a href="#">PROGRAM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="title">
+            <h1>Meditation<br>is Life</h1>
+            <a href="#content"><button id="scrollBtn">NEXT ></button></a>
+        </div>
+    </div>
+
+    <div id="content">
+        <h1>Find Inner Peace <br> Through Meditation</h1>
+        <h3>-<br>Meditation is life</h3>
+    </div>
+
+    <div id="menu">
+        <div class="row">
+            <a href="#"><div class="col-sm-3"><h1>TIMER</h1></div></a>
+            <a href="#"><div class="col-sm-3"><h1>INFO</h1></div></a>
+            <a href="#"><div class="col-sm-3"><h1>DOIT</h1></div></a>
+            <a href="#"><div class="col-sm-3"><h1>MBTI</h1></div></a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>ⓒ Team Six</p>
+        <p class="github">https://github.com/MindFulMind/mind.git</p>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $("#scrollBtn").click(function() {
+            $("html, body").animate({
+                scrollTop: $("#content").offset().top
+            }, 1000);
+        });
+    });
+</script>
+</html>
