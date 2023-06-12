@@ -7,21 +7,42 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="CSS\home.css">
-    <title>MindFulMind</title>
+    <link rel="stylesheet" href="CSS\main.css">
+    <script src="spot.js" charset="utf-8"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACBGaRyPAqW2CHkURByG47U4rNKjv65Ec&callback=initMap"></script>
+    <title>SPOT</title>
     <style>
-        #header {
-            background-image: url('home.jpg');
-            background-size: cover;
-            height: 850px;
+        #spot{
+            background-color: grey;
             color: white;
+            border-radius: 35px;
         }
-        #menu {
-            background-image: url('menu.jpg');
-            background-size: cover;
-            height: 1000px;
+        .sub-content{
             color: white;
+            text-align: center;
+            background-image: url('spot.png');
+            background-size: cover;
+            width: 100%;
+            height: 300px;
+            padding-top: 80px;
         }
+        .row {
+            margin: 100px 80px 50px 80px;
+        }
+        #map {
+            height: 600px; 
+        }
+        #marker-list {
+            height: 600px; 
+            overflow-y: auto; 
+        }
+        #marker-ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -47,7 +68,7 @@
                             <li><a href="#">CHALLENGE</a></li>
                         </ul>
                     </li>
-                    <li><a href="spot.html" class="mainmenu" style="font-size: 20px;">PLACE</a>
+                    <li><a href="#" class="mainmenu" style="font-size: 20px;">PLACE</a>
                         <ul class="submenu">
                             <li><a href="spot.html">SPOT</a></li>
                             <li><a href="#">PROGRAM</a></li>
@@ -57,38 +78,27 @@
             </div>
         </nav>
 
-        <div id="title">
-            <h1>Meditation<br>is Life</h1>
-            <a href="#content"><button id="scrollBtn">NEXT ></button></a>
+        <div class="container-fluid">
+            <div class="sub-content">
+                <h1>SPOT</h1>
+                <h3>Recommended spots for meditation</h3>
+                <h4>HOME > PLACE > SPOT</h4>
+            </div>
+
+            <div class="sub-bar">
+                <ul class="info-sub">
+                    <li id="spot"><a href="spot.html">SPOT</a></li>
+                    <li id="program"><a href="program.html">PROGRAM</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    <div id="content">
-        <h1>Find Inner Peace <br> Through Meditation</h1>
-        <h3>-<br>Meditation is life</h3>
-    </div>
-
-    <div id="menu">
-        <div class="row">
-            <a href="#"><div class="col-sm-3"><h1><b>TIMER</b></h1></div></a>
-            <a href="#"><div class="col-sm-3"><h1><b>INFO</b></h1></div></a>
-            <a href="#"><div class="col-sm-3"><h1><b>DOIT</b></h1></div></a>
-            <a href="#"><div class="col-sm-3"><h1><b>MBTI</b></h1></div></a>
+    <div class="row">
+        <div class="col-sm-8" id="map"></div>
+        <div class="col-sm-4" id="marker-list">
+            <ul id="marker-ul"></ul>
         </div>
     </div>
-
-    <div id="footer">
-        <p>ⓒ Team Six</p>
-        <p class="github">https://github.com/MindFulMind/mind.git</p>
-    </div>
+    
 </body>
-<script>
-    $(document).ready(function() {
-        $("#scrollBtn").click(function() {
-            $("html, body").animate({
-                scrollTop: $("#content").offset().top
-            }, 1000);
-        });
-    });
-</script>
 </html>
