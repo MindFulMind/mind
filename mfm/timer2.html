@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS\timer.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap" rel="stylesheet" />
+    <title>TIMER</title>
+    <style>
+      #header {
+        color: white;
+      }
+      body {
+        background-image: url("timer.png");
+        background-size: cover;
+      }
+      #timer {
+        font-family: "Cormorant Upright";
+        font-size: 160px;
+        text-align: center;
+      }
+      #timer_p {
+        color: white;
+      }
+      #date {
+        margin-top: 190px;
+      }
+      #date_p {
+        font-family: "Gentium Book Plus";
+        text-align: center;
+        color: white;
+        font-size: 30px;
+      }
+      .btnimg {
+        width: 33px;
+        height: 33px;
+      }
+      .timerbtn {
+        width: 33px;
+        height: 33px;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+      }
+      #startbtn,
+      #pausebtn {
+        margin-right: 110px;
+      }
+      #bgmcopyright {
+        position: absolute;
+        margin-top: 310px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-light text-black navbarmenu">
+        <div class="container-fluid navheader">
+          <div class="navbar-header navhead">
+            <a class="navbar-brand" href="home.html" style="font-size: 30px">MindFulMind</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right navsel">
+            <li>
+              <a href="way.html" class="mainmenu" style="font-size: 20px">INFO</a>
+              <ul class="submenu">
+                <li><a href="way.html">WAY</a></li>
+                <li><a href="effect.html">EFFECT</a></li>
+                <li><a href="kind.html">KIND</a></li>
+                <li><a href="mbti.html">MBTI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="mainmenu" style="font-size: 20px">MEDITATION</a>
+              <ul class="submenu">
+                <li><a href="#">TIMER</a></li>
+                <li><a href="#">VEDIO</a></li>
+                <li><a href="#">CHALLENGE</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="spot.html" class="mainmenu" style="font-size: 20px">PLACE</a>
+              <ul class="submenu">
+                <li><a href="spot.html">SPOT</a></li>
+                <li><a href="#">PROGRAM</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content">
+      <div class="row g-0">
+        <div class="col-4"></div>
+        <div class="col-4" id="date"><p id="date_p"></p></div>
+        <div class="col-4"></div>
+      </div>
+      <script>
+        const time = document.querySelector("#date_p");
+
+        function getT() {
+          const date = new Date();
+          const year = date.getFullYear();
+          const month = date.getMonth() + 1;
+          const day = date.getDate();
+          const hour = String(date.getHours()).padStart(2, "0");
+          const min = String(date.getMinutes()).padStart(2, "0");
+          const ddate = date.getDay();
+          switch (ddate) {
+            case 1:
+              var dddate = "SUN";
+              break;
+            case 2:
+              var dddate = "MON";
+              break;
+            case 3:
+              var dddate = "TUE";
+              break;
+            case 4:
+              var dddate = "WED";
+              break;
+            case 5:
+              var dddate = "THU";
+              break;
+            case 6:
+              var dddate = "FRI";
+              break;
+            case 7:
+              var dddate = "SAT";
+              break;
+            default:
+              break;
+          }
+
+          time.innerHTML = `${year}-${month}-${day} ${dddate} ${hour}:${min}`;
+        }
+        getT();
+        setInterval(getT, 1000);
+      </script>
+      <div class="row g-0">
+        <div class="col-4"></div>
+        <div class="col-4" id="timer"><p id="timer_p"></p></div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4" id="iconbtn" style="text-align: center">
+        <button class="timerbtn" id="startbtn"><img src="play.png" id="startimg" class="btnimg" /></button>
+        <button class="timerbtn" id="pausebtn"><img src="pause1.png" id="pauseimg" class="btnimg" /></button>
+        <button class="timerbtn" id="stopbtn"><img src="stop2.png" id="stopimg" class="btnimg" /></button>
+      </div>
+      <script>
+        var startT, startH;
+        var endT, endH;
+        var timerStart;
+        var pauseClick = 0;
+
+        $(document).ready(function () {
+          if (!startT) {
+            startT = new Date().getTime();
+            startH = new Date().getHours();
+
+            timerStart = setInterval(getTimerT, 100);
+          }
+        });
+
+        $("#startbtn").click(function () {
+          if (startT == 0) {
+            startT = new Date().getTime();
+            startH = new Date().getHours();
+            timerStart = setInterval(getTimerT, 100);
+          } else if (pauseClick != 0) {
+            startT += new Date().getTime() - endT;
+            startH += new Date().getHours() - endH;
+            pauseClick = 0;
+
+            timerStart = setInterval(getTimerT, 100);
+          }
+        });
+
+        function getTimerT() {
+          var nowT = new Date().getTime();
+          var nowH = new Date().getHours();
+
+          var TimerT = new Date(nowT - startT);
+          var TimerH = nowH - startH;
+
+          var Thour = String(TimerH).padStart(2, "0");
+          var Tmin = String(TimerT.getMinutes()).padStart(2, "0");
+          var Tsec = String(TimerT.getSeconds()).padStart(2, "0");
+
+          document.querySelector("#timer_p").innerHTML = ` ${Thour} : ${Tmin} : ${Tsec} `;
+        }
+
+        $("#pausebtn").click(function () {
+          if (timerStart) {
+            clearInterval(timerStart);
+
+            endT = new Date().getTime();
+            endH = new Date().getHours();
+            pauseClick = 1;
+          }
+        });
+
+        $("#stopbtn").click(function () {
+          clearInterval(timerStart);
+          startT = 0;
+          startH = 0;
+          Thour = 0;
+          Tmin = 0;
+          Tsec = 0;
+          document.querySelector("#timer_p").innerHTML = ` 00 : 00 : 00 `;
+          timerStart = 0;
+          pauseClick = 1;
+        });
+      </script>
+      <div class="col-sm-4"></div>
+      <audio autoplay>
+        <source src="timer_bgm.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+    <footer id="bgmcopyright">
+      <p style="font-size: 0.9rem; font-style: italic; color: rgb(111, 111, 111)">
+        <span>
+          title :
+          <a
+            href="https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13220737&menuNo=200020"
+            style="text-decoration-line: none; color: rgb(111, 111, 111)"
+          >
+            잔잔히 밀려오는 파도소리</a
+          >
+          authr :
+          <a
+            href="https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13220737&menuNo=200020"
+            style="text-decoration-line: none; color: rgb(111, 111, 111)"
+            >한국저작권위원회 </a
+          >by site :
+          <a href="https://gongu.copyright.or.kr/gongu/main/main.do" style="text-decoration-line: none; color: rgb(111, 111, 111)">공유마당 저작권 위원회</a> is
+          licensed under 한국저작권위원회의 "잔잔히 밀려오는 파도소리" 은 CC BY 라이선스로 제공됩니다.</span
+        >
+      </p>
+    </footer>
+  </body>
+</html>
