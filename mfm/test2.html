@@ -1,72 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Bootstrap Theme Simply Me</title>
-        <meta charset="utf-8">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<style>
-            #way{
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS\test.css">
+    <title>Document</title>
+    <style>
+        #effect{
             background-color: grey;
             color: white;
             border-radius: 35px;
-            }
-		</style>
-    </head>
+        }
 
-    <body>
-		<div id="header">
-            <nav class="navbar navbar-light text-black navbarmenu">
-                <div class="container-fluid navheader">
-                    <div class="navbar-header navhead">
-                        <a class="navbar-brand" href="#" style="font-size: 30px;">MindFulMind</a>
-                    </div>
-                    <ul class="nav navbar-nav navbar-right navsel">
-                        <li><a href="way.html" class="mainmenu" style="font-size: 20px;">INFO</a>
-                            <ul class="submenu">
-                                <li><a href="way.html">WAY</a></li>
-                                <li><a href="effect.html">EFFECT</a></li>
-                                <li><a href="kind.html">KIND</a></li>
-                                <li><a href="mbti.html">MBTI</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="mainmenu" style="font-size: 20px;">MEDITATION</a>
-                            <ul class="submenu">
-                                <li><a href="#">TIMER</a></li>
-                                <li><a href="#">VEDIO</a></li>
-                                <li><a href="#">CHALLENGE</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="mainmenu" style="font-size: 20px;">PLACE</a>
-                            <ul class="submenu">
-                                <li><a href="#">SPOT</a></li>
-                                <li><a href="#">PROGRAM</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        .sub-content{
+         color: white;
+         text-align: center;
+         background-image: url('back1.png');
+         background-size: cover;
+        width: 100%;
+        height: 300px;
+        padding-top: 80px;
+        }
 
-            <div class="container-fluid">
-                <div class="sub-content">
-                    <h1>WAY</h1>
-                    <h3>The right way to Meditate</h3>
-                    <h4>HOME > INFO > WAY</h4>
-                </div>
+        .con1{
+            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Lora', serif;
+            padding-top:30px;
+            padding-bottom: 50px;
+            font-weight: bold;
+        }
+        .row{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
 
-                <div class="sub-bar">s
-                    <ul class="info-sub">
-                        <li id="way"><a href="way.html">WAY</a></li>
-                        <li id="effect"><a href="effect.html">EFFECT</a></li>
-                        <li id="kind"><a href="kind.html">KIND</a></li>
-                        <li id="mbti"><a href="mbti.html">MBTI</a></li>
-                    </ul>
+        .con1 img{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .con1 h1, h3{
+            font-weight: bold;
+        }
+
+        .collapse{
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <nav class="navbar navbar-light text-black navbarmenu">
+            <div class="container-fluid navheader">
+                <div class="navbar-header navhead">
+                    <a class="navbar-brand" href="#" style="font-size: 30px;">MindFulMind</a>
                 </div>
+                <ul class="nav navbar-nav navbar-right navsel">
+                    <li><a href="way.html" class="mainmenu" style="font-size: 20px;">INFO</a>
+                        <ul class="submenu">
+                            <li><a href="way.html">WAY</a></li>
+                            <li><a href="effect.html">EFFECT</a></li>
+                            <li><a href="kind.html">KIND</a></li>
+                            <li><a href="mbti.html">MBTI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="mainmenu" style="font-size: 20px;">MEDITATION</a>
+                        <ul class="submenu">
+                            <li><a href="#">TIMER</a></li>
+                            <li><a href="#">VEDIO</a></li>
+                            <li><a href="#">CHALLENGE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="mainmenu" style="font-size: 20px;">PLACE</a>
+                        <ul class="submenu">
+                            <li><a href="#">SPOT</a></li>
+                            <li><a href="#">PROGRAM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="sub-content">
+                <h1>EFFECT</h1>
+                <h3>The effects of meditation</h3>
+                <h4>HOME > INFO > EFFECT</h4>
             </div>
         </div>
-    </body>
+
+        <div class="sub-bar">
+            <ul class="info-sub">
+                <li id="way"><a href="way.html">WAY</a></li>
+                <li id="effect"><a href="effect.html">EFFECT</a></li>
+                <li id="kind"><a href="kind.html">KIND</a></li>
+                <li id="mbti"><a href="mbti.html">MBTI</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container-fluid text-center con1">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h1>The effect of Meditation</h1>
+                    <p>Cortisol hormones are the most representative hormones against stress, and when the level of the hormone rises, they have harmful effects on the body, such as the release of an inflammatory chemical called cytokine.</p>
+                    <p>This can act as a potential cause for mental and physical diseases and act as the beginning of various diseases.</p>
+                    <p>The effects of meditation listed are mostly caused by lowering levels of cortisol hormones and giving various stimuli to the brain.</p>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <h3>Strengthen stress responsiveness</h3>
+                    <img src="eff1.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#eff1">
+                    <div id="eff1" class="collapse">Periodic meditation reduces the release level of cytokines and strengthens their ability to respond to stress, reducing stress in everyday life and helping them overcome or prevent the risk of mental illnesses such as depression and anxiety disorders</div>
+                </div>
+                <div class="col-sm-4">
+                    <h3>vitalization</h3>
+                    <img src="eff2.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#eff2">
+                    <div id="eff2" class="collapse">When the ability to respond to stress is strengthened, mental health also increases, which has the effect of enhancing life's vitality, such as reducing negative thoughts and turning into positive minds.</div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <h3>self-reflection</h3>
+                    <img src="eff3.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#eff3">
+                    <div id="eff3" class="collapse">Self-reflection removes harmful or self-destructive thoughts such as meaning, motivation, driving force, and problem solving by looking inside oneself, and helps you to improve your understanding of yourself and arm your healthier mental strength.</div>
+                </div>
+                <div class="col-sm-4">
+                    <h3>increased brain function</h3>
+                    <img src="eff4.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#eff4">
+                    <div id="eff4" class="collapse">If weight training is an exercise that strengthens the body's muscles, joints, and ligaments, meditation is an exercise that can strengthen the brain.
+                        <br><br>Meditation degrades the brain's pattern of engaging in negative thoughts such as attention loss, concern, and anxiety, and increases brain function that increases concentration, memory, and smooth thinking ability judgment.</div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <h3>mental health</h3>
+                    <img src="eff5.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#eff5">
+                    <div id="eff5" class="collapse">The brain function raised through meditation has a great impact on mental health, and as a result, it reduces impulsive behavior to help people escape addiction, and strengthens social skills, which have a beneficial impact on mental health.</div>
+                </div>
+                <div class="col-sm-4">
+                    <h3>physical health</h3>
+                    <img src="eff6.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#eff6">
+                    <div id="eff6" class="collapse">Mental health also affects physical health.<br>
+                        <br>Improved brain function and mental ability are combined with sleep and pain relief, helping to improve insomnia and have the ability to feel more tolerant of pain than others.
+                        <br><br>In addition, the relaxed body reduces the burden on the heart, reducing blood pressure, which creates an opportunity to prevent and overcome cardiovascular disease.</div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

@@ -38,8 +38,8 @@
 }
 
 .navbar{
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: bold;
+    font-family: 'Lora', serif;
+    font-weight: 700;
 }
 
 .submenu {
@@ -61,6 +61,8 @@
 }
 
 .submenu li{
+    font-family: 'Lora', serif;
+    font-weight: 700;
     padding-top: 20px;
 }
 
@@ -82,16 +84,18 @@
 }
 
 .sub-bar ul{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    transform: translate( 0%, -50% );
     list-style: none;
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate( -50%, 0% );
+    border: 1px solid black;
     box-shadow: 2px 2px 5px rgb(191, 191, 191);
     background-color: rgb(255, 255, 255);
     border-radius: 35px;
     padding-left: 0px;
     padding-right: 0px;
+    text-align: center;
 }
 
 .sub-bar a{
@@ -100,8 +104,9 @@
 }
 
 .sub-bar li{
-    width: 180px;
-    float: left;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 20px;
