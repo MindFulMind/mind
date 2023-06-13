@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
@@ -12,141 +12,181 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="CSS\main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cambo&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS\main.css" />
     <title>WAY</title>
     <style>
-        #way{
-            background-color: grey;
-            color: white;
-            border-radius: 35px;
-        }
+      #way {
+        background-color: grey;
+        color: white;
+        border-radius: 35px;
+      }
 
-        .sub-content{
-            color: white;
-            text-align: center;
-            background-image: url('back4.png');
-            background-size: cover;
-            width: 100%;
-            height: 300px;
-            padding-top: 80px;
-        }
+      .sub-content {
+        color: white;
+        text-align: center;
+        background-image: url("back4.png");
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        padding-top: 80px;
+        font-family: "Cambo";
+      }
 
-        .wayInfo {
-            margin: 100px auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      .wayInfo {
+        margin: 100px auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Cambo";
+      }
 
+      .wayInfo > img {
+        width: 300px;
+        height: 200px;
+        margin-right: 100px;
+      }
 
-        .wayInfo > img {
-            width: 300px;
-            height: 200px;
-            margin-right: 100px;
-        }
-
-        .content > h3 {
-            font-family: 'Lora', serif;
-        }
+      .content > h3 {
+        font-family: "Lora", serif;
+      }
+      #footer {
+        margin: 10px 0 10px 0;
+      }
+      #footer > p {
+        display: inline;
+        float: left;
+        margin: 0 20px 0 30px;
+        font-family: "Times New Roman", Times, serif;
+        color: gray;
+      }
+      #footer > .github {
+        float: right;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <nav class="navbar navbar-light text-black navbarmenu">
-            <div class="container-fluid navheader">
-                <div class="navbar-header navhead">
-                    <a class="navbar-brand" href="home.html" style="font-size: 30px;">MindFulMind</a>
-                </div>
-                <ul class="nav navbar-nav navbar-right navsel">
-                    <li><a href="way.html" class="mainmenu" style="font-size: 20px;">INFO</a>
-                        <ul class="submenu">
-                            <li><a href="way.html">WAY</a></li>
-                            <li><a href="effect.html">EFFECT</a></li>
-                            <li><a href="kind.html">KIND</a></li>
-                            <li><a href="mbti.html">MBTI</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="mainmenu" style="font-size: 20px;">MEDITATION</a>
-                        <ul class="submenu">
-                            <li><a href="timer1.html">TIMER</a></li>
-                            <li><a href="video.html">VIDEO</a></li>
-                            <li><a href="challenge.html">CHALLENGE</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="spot.html" class="mainmenu" style="font-size: 20px;">PLACE</a>
-                        <ul class="submenu">
-                            <li><a href="spot.html">SPOT</a></li>
-                            <li><a href="program.html">PROGRAM</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-light text-black navbarmenu">
+        <div class="container-fluid navheader">
+          <div class="navbar-header navhead">
+            <a class="navbar-brand" href="home.html" style="font-size: 30px">MindFulMind</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right navsel">
+            <li>
+              <a href="way.html" class="mainmenu" style="font-size: 20px">INFO</a>
+              <ul class="submenu">
+                <li><a href="way.html">WAY</a></li>
+                <li><a href="effect.html">EFFECT</a></li>
+                <li><a href="kind.html">KIND</a></li>
+                <li><a href="mbti.html">MBTI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="mainmenu" style="font-size: 20px">MEDITATION</a>
+              <ul class="submenu">
+                <li><a href="timer1.html">TIMER</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li><a href="challenge.html">CHALLENGE</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="spot.html" class="mainmenu" style="font-size: 20px">PLACE</a>
+              <ul class="submenu">
+                <li><a href="spot.html">SPOT</a></li>
+                <li><a href="program.html">PROGRAM</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-        <div class="container-fluid">
-            <div class="sub-content">
-                <h1>WAY</h1>
-                <h3>The right way to Meditate</h3>
-                <h4>HOME > INFO > WAY</h4>
-            </div>
-
-            <div class="sub-bar">
-                <ul class="info-sub">
-                    <li id="way"><a href="way.html">WAY</a></li>
-                    <li id="effect"><a href="effect.html">EFFECT</a></li>
-                    <li id="kind"><a href="kind.html">KIND</a></li>
-                    <li id="mbti"><a href="mbti.html">MBTI</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <div class="sub-content">
+          <h1>WAY</h1>
+          <h3>The right way to Meditate</h3>
+          <h4>HOME > INFO > WAY</h4>
         </div>
 
-        <div class="wayInfo">
-            <img src="way1.jpg">
-            <div class="content">
-                <h3><b>1. Create a comfortable place<br></b></h3>
-                <p>When you start meditating, it's important to choose a quiet and unimpeded place first.<br>
-                If it's a room where you can stay quiet in the house or an outdoor space, <br>
-                a space where you can relax your body and mind is good. <br>
-                And it's also a good way to put small things in the place that can calm and inspire me.<br>
-                If you set up your own place, you can feel more comfortable and stay focused when you start meditating.</p>
-            </div>
+        <div class="sub-bar">
+          <ul class="info-sub">
+            <li id="way"><a href="way.html">WAY</a></li>
+            <li id="effect"><a href="effect.html">EFFECT</a></li>
+            <li id="kind"><a href="kind.html">KIND</a></li>
+            <li id="mbti"><a href="mbti.html">MBTI</a></li>
+          </ul>
         </div>
+      </div>
 
-        <div class="wayInfo">
-            <img src="way2.jpg" style="margin-left:70px;">
-            <div class="content">
-                <h3><b>2. Relaxing your body<br></b></h3>
-                <p>Please relax your body to get used to the environment for a few minutes before starting meditation.<br>
-                    At this time, simple yoga or stretching together to relieve tension on the face, neck, and shoulders is more effective.<br>
-                    Also, many people think that you should take a cross-legged posture when meditating,<br>
-                    but you don't have to. You can sit on a sofa, chair, or lie on the bed.<br>
-                    Take various poses that you can comfortably do.</p>
-            </div>
+      <div class="wayInfo">
+        <img src="way1.jpg" />
+        <div class="content">
+          <h3>
+            <b>1. Create a comfortable place<br /></b>
+          </h3>
+          <p>
+            When you start meditating, it's important to choose a quiet and unimpeded place first.<br />
+            If it's a room where you can stay quiet in the house or an outdoor space, <br />
+            a space where you can relax your body and mind is good. <br />
+            And it's also a good way to put small things in the place that can calm and inspire me.<br />
+            If you set up your own place, you can feel more comfortable and stay focused when you start meditating.
+          </p>
         </div>
+      </div>
 
-        <div class="wayInfo">
-            <img src="way3.jpg" style="margin-left:220px;">
-            <div class="content">
-                <h3><b>3. Securing a fixed time<br></b></h3>
-                <p>When practicing meditation, it is recommended to start with a short time of 5 to 10 minutes and gradually increase the time.<br>
-                    Because if you try to meditate for a long time from the beginning, it can be difficult to enjoy the effect because of the psychological burden.<br>
-                    Therefore, when you first start meditating, it is recommended to set the time you want to meditate as a timer and then increase the time<br>
-                    step by step when you get used to it.
-                    <br>Through this, you can reduce the burden of mindfulness meditation and make it a habit steadily.</p>
-            </div>
+      <div class="wayInfo">
+        <img src="way2.jpg" style="margin-left: 70px" />
+        <div class="content">
+          <h3>
+            <b>2. Relaxing your body<br /></b>
+          </h3>
+          <p>
+            Please relax your body to get used to the environment for a few minutes before starting meditation.<br />
+            At this time, simple yoga or stretching together to relieve tension on the face, neck, and shoulders is more effective.<br />
+            Also, many people think that you should take a cross-legged posture when meditating,<br />
+            but you don't have to. You can sit on a sofa, chair, or lie on the bed.<br />
+            Take various poses that you can comfortably do.
+          </p>
         </div>
+      </div>
 
-        <div class="wayInfo">
-            <img src="way4.jpg" style="margin-left:50px;">
-            <div class="content">
-                <h3><b>4. Looking at breathing<br></b></h3>
-                <p>When you start meditating, try to focus on your breathing, focusing on your breathing first.<br>
-                    Feeling how breath flows and flows in the body, and taking a deeper and longer breath calms the body and mind.<br>
-                    If you are unconscious from the sounds or misconceptions around you,<br> come back to your concentration while observing your breathing. 
-                    <br>Even if you have negative thoughts and feelings, practice continuously to return to your current breathing.</p>
-            </div>
+      <div class="wayInfo">
+        <img src="way3.jpg" style="margin-left: 220px" />
+        <div class="content">
+          <h3>
+            <b>3. Securing a fixed time<br /></b>
+          </h3>
+          <p>
+            When practicing meditation, it is recommended to start with a short time of 5 to 10 minutes and gradually increase the time.<br />
+            Because if you try to meditate for a long time from the beginning, it can be difficult to enjoy the effect because of the psychological burden.<br />
+            Therefore, when you first start meditating, it is recommended to set the time you want to meditate as a timer and then increase the time<br />
+            step by step when you get used to it.
+            <br />Through this, you can reduce the burden of mindfulness meditation and make it a habit steadily.
+          </p>
         </div>
+      </div>
+
+      <div class="wayInfo">
+        <img src="way4.jpg" style="margin-left: 50px" />
+        <div class="content">
+          <h3>
+            <b>4. Looking at breathing<br /></b>
+          </h3>
+          <p>
+            When you start meditating, try to focus on your breathing, focusing on your breathing first.<br />
+            Feeling how breath flows and flows in the body, and taking a deeper and longer breath calms the body and mind.<br />
+            If you are unconscious from the sounds or misconceptions around you,<br />
+            come back to your concentration while observing your breathing. <br />Even if you have negative thoughts and feelings, practice continuously to
+            return to your current breathing.
+          </p>
+        </div>
+      </div>
     </div>
-</body>
+    <div id="footer">
+      <p>ⓒ Team Six</p>
+      <p class="github">https://github.com/MindFulMind/mind.git</p>
+    </div>
+  </body>
 </html>

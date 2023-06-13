@@ -1,165 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="CSS\main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cambo&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS\main.css" />
     <title>Document</title>
     <style>
-        #kind{
-            background-image: url('back2.png');
-            color: white;
-            border-radius: 35px;
-        }
+      #kind {
+        background-image: url("back2.png");
+        color: white;
+        border-radius: 35px;
+      }
 
-        .sub-content{
-         color: white;
-         text-align: center;
-         background-image: url('back2.png');
-         background-size: cover;
+      .sub-content {
+        color: white;
+        text-align: center;
+        background-image: url("back2.png");
+        background-size: cover;
         width: 100%;
         height: 300px;
         padding-top: 80px;
-        }
+      }
 
-        .con1{
-            font-family: 'Cormorant Garamond', serif;
-            font-family: 'Lora', serif;
-            padding-bottom: 50px;
-            font-weight: bold;
-        }
-        .row{
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
+      .con1 {
+        font-family: "Cormorant Garamond", serif;
+        font-family: "Lora", serif;
+        padding-bottom: 50px;
+        font-weight: bold;
+      }
+      .row {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
 
-        .con1 img{
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+      .con1 img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
 
-        p{
-            font-size: 20px;
-        }
+      p {
+        font-size: 18px;
+      }
 
-        .con1 h1, h3{
-            font-weight: bold;
-        }
+      .con1 h1,
+      h3 {
+        font-weight: bold;
+      }
 
-        .collapse{
-            font-size: 20px;
-        }
+      .collapse {
+        font-size: 18px;
+      }
+      #footer {
+        margin: 10px 0 10px 0;
+      }
+      #footer > p {
+        display: inline;
+        float: left;
+        margin: 0 20px 0 30px;
+        font-family: "Times New Roman", Times, serif;
+        color: gray;
+      }
+      #footer > .github {
+        float: right;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <nav class="navbar navbar-light text-black navbarmenu">
-            <div class="container-fluid navheader">
-                <div class="navbar-header navhead">
-                    <a class="navbar-brand" href="home.html" style="font-size: 30px;">MindFulMind</a>
-                </div>
-                <ul class="nav navbar-nav navbar-right navsel">
-                    <li><a href="way.html" class="mainmenu" style="font-size: 20px;">INFO</a>
-                        <ul class="submenu">
-                            <li><a href="way.html">WAY</a></li>
-                            <li><a href="effect.html">EFFECT</a></li>
-                            <li><a href="kind.html">KIND</a></li>
-                            <li><a href="mbti.html">MBTI</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="mainmenu" style="font-size: 20px;">MEDITATION</a>
-                        <ul class="submenu">
-                            <li><a href="#">TIMER</a></li>
-                            <li><a href="#">VEDIO</a></li>
-                            <li><a href="#">CHALLENGE</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="mainmenu" style="font-size: 20px;">PLACE</a>
-                        <ul class="submenu">
-                            <li><a href="#">SPOT</a></li>
-                            <li><a href="#">PROGRAM</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="container-fluid">
-            <div class="sub-content">
-                <h1>KIND</h1>
-                <h3>Kind of Meditation</h3>
-                <h4>HOME > INFO > KIND</h4>
-            </div>
-
-            <div class="sub-bar">
-                <ul class="info-sub">
-                    <li id="way"><a href="way.html">WAY</a></li>
-                    <li id="effect"><a href="effect.html">EFFECT</a></li>
-                    <li id="kind"><a href="kind.html">KIND</a></li>
-                    <li id="mbti"><a href="mbti.html">MBTI</a></li>
-                </ul>
-            </div>
+      <nav class="navbar navbar-light text-black navbarmenu">
+        <div class="container-fluid navheader">
+          <div class="navbar-header navhead">
+            <a class="navbar-brand" href="home.html" style="font-size: 30px">MindFulMind</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right navsel">
+            <li>
+              <a href="way.html" class="mainmenu" style="font-size: 20px">INFO</a>
+              <ul class="submenu">
+                <li><a href="way.html">WAY</a></li>
+                <li><a href="effect.html">EFFECT</a></li>
+                <li><a href="kind.html">KIND</a></li>
+                <li><a href="mbti.html">MBTI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="timer1.html" class="mainmenu" style="font-size: 20px">MEDITATION</a>
+              <ul class="submenu">
+                <li><a href="timer1.html">TIMER</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li><a href="challenge.html">CHALLENGE</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="spot.html" class="mainmenu" style="font-size: 20px">PLACE</a>
+              <ul class="submenu">
+                <li><a href="spot.html">SPOT</a></li>
+                <li><a href="program.html">PROGRAM</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="sub-content">
+          <h1>KIND</h1>
+          <h3>Kind of Meditation</h3>
+          <h4>HOME > INFO > KIND</h4>
+        </div>
+
+        <div class="sub-bar">
+          <ul class="info-sub">
+            <li id="way"><a href="way.html">WAY</a></li>
+            <li id="effect"><a href="effect.html">EFFECT</a></li>
+            <li id="kind"><a href="kind.html">KIND</a></li>
+            <li id="mbti"><a href="mbti.html">MBTI</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div id="content">
-        <div class="container-fluid text-center con1">
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6">
-                    <h1>The type of Meditation</h1>
-                    <p>The advantage of meditation is that it does not require special space or equipment, and it is characterized by being able to do it anytime, anywhere.</p>
-                    <p>In addition, you can achieve multiple benefits in just a few minutes of investment instead of a lot of time.</p>
-                    <p>You don't have to sit cross-legged in the meditation position, and you can proceed for as long as you want in a comfortable position.</p>
-                    <p>There are many ways to meditate, but I'll introduce you to a representative method that can be easily applied in everyday life.</p>
-                </div>
-                <div class="col-sm-3"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-4">
-                    <h3>Yoga</h3>
-                    <img src="type1.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#type1">
-                    <div id="type1" class="collapse">Unexpectedly, yoga can also be included in the category of meditation.
-                        <br>
-                        It has the advantage of being able to focus easily on your body and mind in a hectic day while maintaining physical balance rather than moving violently</div>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Intensive meditation</h3>
-                    <img src="type2.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#type2">
-                    <div id="type2" class="collapse">Unlike general meditation, which closes its eyes and reflects on its inner side, it is a method of meditating using the five senses such as natural images, sounds, and smells through specific media (external factors).
-                        <br>
-                        It is common to proceed as a group or program, and it will be conducted according to the media and people's guide.</div>
-                </div>
-                <div class="col-sm-2"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-4">
-                    <h3>Matra Meditation</h3>
-                    <img src="type3.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#type3">
-                    <div id="type3" class="collapse">Unlike the above meditation, it is meditation that focuses on the inside.
-                        <br>
-                        The key is to think about certain words, phrases, and clauses over and over again, and to take a passive attitude without responding to any external factors.</div>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Insight meditation</h3>
-                    <img src="type4.jpg" class = "img-circle member" width="255" height="255" data-toggle="collapse" data-target="#type4">
-                    <div id="type4" class="collapse">
-                        Insight meditation is characterized by focusing on how you feel at the moment, but not giving much meaning to it.
-                        <br>
-                        For example, if anger is soaring, it is to feel pure anger as it is, not thinking with the brain, such as the cause and solution of anger.
-                        <br>
-                        Insight meditation is so comprehensive that there are no specific guidelines.</div>
-                </div>
-                <div class="col-sm-2"></div>
-            </div>
+      <div class="container-fluid text-center con1">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+            <h1>The type of Meditation</h1>
+            <p style="margin-top: 50px">
+              The advantage of meditation is that it does not require special space or equipment, and it is characterized by being able to do it anytime,
+              anywhere.
+            </p>
+            <p>In addition, you can achieve multiple benefits in just a few minutes of investment instead of a lot of time.</p>
+            <p>You don't have to sit cross-legged in the meditation position, and you can proceed for as long as you want in a comfortable position.</p>
+            <p>There are many ways to meditate, but I'll introduce you to a representative method that can be easily applied in everyday life.</p>
+          </div>
+          <div class="col-sm-3"></div>
         </div>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4">
+            <h3>Yoga</h3>
+            <img src="type1.jpg" class="img-circle member" width="255" height="255" data-toggle="collapse" data-target="#type1" />
+            <div id="type1" class="collapse">
+              Unexpectedly, yoga can also be included in the category of meditation.
+              <br />
+              It has the advantage of being able to focus easily on your body and mind in a hectic day while maintaining physical balance rather than moving
+              violently
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3>Intensive meditation</h3>
+            <img src="type2.jpg" class="img-circle member" width="255" height="255" data-toggle="collapse" data-target="#type2" />
+            <div id="type2" class="collapse">
+              Unlike general meditation, which closes its eyes and reflects on its inner side, it is a method of meditating using the five senses such as
+              natural images, sounds, and smells through specific media (external factors).
+              <br />
+              It is common to proceed as a group or program, and it will be conducted according to the media and people's guide.
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4">
+            <h3>Matra Meditation</h3>
+            <img src="type3.jpg" class="img-circle member" width="255" height="255" data-toggle="collapse" data-target="#type3" />
+            <div id="type3" class="collapse">
+              Unlike the above meditation, it is meditation that focuses on the inside.
+              <br />
+              The key is to think about certain words, phrases, and clauses over and over again, and to take a passive attitude without responding to any
+              external factors.
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3>Insight meditation</h3>
+            <img src="type4.jpg" class="img-circle member" width="255" height="255" data-toggle="collapse" data-target="#type4" />
+            <div id="type4" class="collapse">
+              Insight meditation is characterized by focusing on how you feel at the moment, but not giving much meaning to it.
+              <br />
+              For example, if anger is soaring, it is to feel pure anger as it is, not thinking with the brain, such as the cause and solution of anger.
+              <br />
+              Insight meditation is so comprehensive that there are no specific guidelines.
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+      </div>
     </div>
-</body>
+    <div id="footer">
+      <p>ⓒ Team Six</p>
+      <p class="github">https://github.com/MindFulMind/mind.git</p>
+    </div>
+  </body>
 </html>
