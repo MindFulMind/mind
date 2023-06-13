@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS\main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap" rel="stylesheet" />
+    <script src="program.js" charset="utf-8"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACBGaRyPAqW2CHkURByG47U4rNKjv65Ec&callback=initMap"></script>
+    <title>PROGRAM</title>
+    <style>
+        #program{
+            background-color: grey;
+            color: white;
+            border-radius: 35px;
+        }
+        .sub-content{
+            color: white;
+            text-align: center;
+            background-image: url('program.png');
+            background-size: cover;
+            width: 100%;
+            height: 300px;
+            padding-top: 80px;
+        }
+        .programBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        #map {
+            width: 540px;
+            height: 550px; 
+        }
+        #marker-list {
+            margin-left: 20px;
+        }
+        #marker-ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar navbar-light text-black navbarmenu">
+            <div class="container-fluid navheader">
+                <div class="navbar-header navhead">
+                    <a class="navbar-brand" href="home.html" style="font-size: 30px;">MindFulMind</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right navsel">
+                    <li><a href="way.html" class="mainmenu" style="font-size: 20px;">INFO</a>
+                        <ul class="submenu">
+                            <li><a href="way.html">WAY</a></li>
+                            <li><a href="effect.html">EFFECT</a></li>
+                            <li><a href="kind.html">KIND</a></li>
+                            <li><a href="mbti.html">MBTI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="timer1.html" class="mainmenu" style="font-size: 20px;">MEDITATION</a>
+                        <ul class="submenu">
+                            <li><a href="timer1.html">TIMER</a></li>
+                            <li><a href="video.html">VIDEO</a></li>
+                            <li><a href="challenge.html">CHALLENGE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="spot.html" class="mainmenu" style="font-size: 20px;">PLACE</a>
+                        <ul class="submenu">
+                            <li><a href="spot.html">SPOT</a></li>
+                            <li><a href="program.html">PROGRAM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="sub-content">
+                <h1>PROGRAM</h1>
+                <h3>Recommendations for National Meditation Program</h3>
+                <h4>HOME > PLACE > PROGRAM</h4>
+            </div>
+
+            <div class="sub-bar">
+                <ul class="info-sub">
+                    <li id="spot"><a href="spot.html">SPOT</a></li>
+                    <li id="program"><a href="program.html">PROGRAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="programBox">
+        <div id="map"></div>
+        <div id="marker-list">
+            <ul id="marker-ul"></ul>
+        </div>
+    </div>
+    
+</body>
+</html>
