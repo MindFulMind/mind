@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cambo&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS\main.css" />
+    <title>CHALLENGE</title>
+    <style>
+      #challenge {
+        background-image: url("challenge.png");
+        color: white;
+        border-radius: 35px;
+      }
+
+      .sub-content {
+        color: white;
+        text-align: center;
+        background-image: url("challenge.png");
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        padding-top: 80px;
+      }
+      .sub-content h3,
+      h4 {
+        font-family: "Cambo";
+      }
+      #Challintro {
+        margin-top: 20px;
+        font-size: 17px;
+        font-family: "Cambo";
+      }
+      #noneCheckimg {
+        width: 30px;
+        height: 30px;
+      }
+      #content {
+        margin-bottom: 300px;
+      }
+      .question {
+        padding-top: 30px;
+        margin-right: 0px;
+        font-size: 30px;
+        font-family: "Cambo";
+        vertical-align: top;
+      }
+      .Qbtn {
+        margin-left: 50px;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+      }
+      #checkbtn1,
+      #checkbtn2,
+      #checkbtn3,
+      #checkbtn4,
+      #checkbtn5 {
+        width: 30px;
+        height: 30px;
+      }
+      .downarrow {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #footer {
+        margin: 10px 0 10px 0;
+      }
+      #footer > p {
+        display: inline;
+        float: left;
+        margin: 0 20px 0 30px;
+        font-family: "Times New Roman", Times, serif;
+        color: gray;
+      }
+      #footer > .github {
+        float: right;
+      }
+      #winner {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #winner_p {
+        position: relative;
+        padding-top: 30px;
+        font-size: 25px;
+        font-family: "Cambo";
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-light text-black navbarmenu">
+        <div class="container-fluid navheader">
+          <div class="navbar-header navhead">
+            <a class="navbar-brand" href="home.html" style="font-size: 30px">MindFulMind</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right navsel">
+            <li>
+              <a href="way.html" class="mainmenu" style="font-size: 20px">INFO</a>
+              <ul class="submenu">
+                <li><a href="way.html">WAY</a></li>
+                <li><a href="effect.html">EFFECT</a></li>
+                <li><a href="kind.html">KIND</a></li>
+                <li><a href="mbti.html">MBTI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="timer1.html" class="mainmenu" style="font-size: 20px">MEDITATION</a>
+              <ul class="submenu">
+                <li><a href="timer1.html">TIMER</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li><a href="challenge.html">CHALLENGE</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="spot.html" class="mainmenu" style="font-size: 20px">PLACE</a>
+              <ul class="submenu">
+                <li><a href="spot.html">SPOT</a></li>
+                <li><a href="program.html">PROGRAM</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="sub-content">
+          <h1 style="padding-right: 26px">CHALLENGE</h1>
+          <h3>Challenges related to meditation</h3>
+          <h4>HOME > MEDITATION > CHALLENGE</h4>
+        </div>
+
+        <div class="sub-bar">
+          <ul class="info-sub">
+            <li id="timer"><a href="timer1.html">TIMER</a></li>
+            <li id="video"><a href="video.html">VIDEO</a></li>
+            <li id="challenge"><a href="challenge.html">CHALLENGE</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="container-fluid text-center con1">
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <p id="Challintro">Here are some great challenges to meditate with MindFulMind! How far can you go? We support you!</p>
+            <div class="box">
+              <p class="question">
+                1. I have watched meditation videos.<button class="Qbtn" id="btn1">
+                  <img src="check1.png" id="checkbtn1" onclick="changebtn()" />
+                </button>
+              </p>
+              <img class="downarrow" src="down-arrow.png" id="arrow2" />
+              <p class="question" id="q2">
+                2. I can meditate for more than 10 minutes.<button class="Qbtn" id="btn2">
+                  <img src="check1.png" id="checkbtn2" onclick="changebtn2()" />
+                </button>
+              </p>
+              <img class="downarrow" src="down-arrow.png" id="arrow3" />
+              <p class="question" id="q3">
+                3. I have a favorite meditation method.<button class="Qbtn" id="btn3">
+                  <img src="check1.png" id="checkbtn3" onclick="changebtn3()" />
+                </button>
+              </p>
+              <img class="downarrow" src="down-arrow.png" id="arrow4" />
+              <p class="question" id="q4">
+                4. I can use meditation to help me sleep on sleepless nights.
+                <button class="Qbtn" id="btn4">
+                  <img src="check1.png" id="checkbtn4" onclick="changebtn4()" />
+                </button>
+              </p>
+              <img class="downarrow" src="down-arrow.png" id="arrow5" />
+              <p class="question" id="q5">
+                5. I can relax through meditation when my mind is complicated.
+                <button class="Qbtn" id="btn5">
+                  <img src="check1.png" id="checkbtn5" onclick="changebtn5()" />
+                </button>
+              </p>
+              <img class="downarrow" src="down-arrow.png" id="arrow6" />
+              <p>
+                <img src="challenge_winner.png" id="winner" />
+                <p id="winner_p">Congratulations! You have completed all challenges. <br />We hope to have more fun with MindFulMind in the future.</p>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $("#arrow2").hide();
+          $("#q2").hide();
+          $("#arrow3").hide();
+          $("#q3").hide();
+          $("#arrow4").hide();
+          $("#q4").hide();
+          $("#arrow5").hide();
+          $("#q5").hide();
+          $("#arrow6").hide();
+          $("#winner").hide();
+          $("#winner_p").hide(); 
+        });
+
+        $("#btn1").click(function () {
+          $("#arrow2").show(1000);
+          $("#q2").delay(700).show(1000);
+        });
+
+        $("#btn2").click(function () {
+          $("#arrow3").show(1000);
+          $("#q3").delay(700).show(1000);
+        });
+
+        $("#btn3").click(function () {
+          $("#arrow4").show(1000);
+          $("#q4").delay(700).show(1000);
+        });
+
+        $("#btn4").click(function () {
+          $("#arrow5").show(1000);
+          $("#q5").delay(700).show(1000);
+        });
+
+        $("#btn5").click(function () {
+          $("#arrow6").show(1000);
+          $("#winner").delay(700).show(1000);
+          $("#winner_p").show(1000);
+        });
+
+        function changebtn() {
+          $("#checkbtn1").attr("src", "/mfm/check2.png");
+          $("#checkbtn1").animate(
+            {
+              width: "40px",
+              height: "40px",
+            },
+            500
+          );
+          $("#checkbtn1").animate(
+            {
+              width: "30px",
+              height: "30px",
+            },
+            500
+          );
+        }
+        function changebtn2() {
+          $("#checkbtn2").attr("src", "/mfm/check2.png");
+          $("#checkbtn2").animate(
+            {
+              width: "40px",
+              height: "40px",
+            },
+            500
+          );
+          $("#checkbtn2").animate(
+            {
+              width: "30px",
+              height: "30px",
+            },
+            500
+          );
+        }
+        function changebtn3() {
+          $("#checkbtn3").attr("src", "/mfm/check2.png");
+          $("#checkbtn3").animate(
+            {
+              width: "40px",
+              height: "40px",
+            },
+            500
+          );
+          $("#checkbtn3").animate(
+            {
+              width: "30px",
+              height: "30px",
+            },
+            500
+          );
+        }
+        function changebtn4() {
+          $("#checkbtn4").attr("src", "/mfm/check2.png");
+          $("#checkbtn4").animate(
+            {
+              width: "40px",
+              height: "40px",
+            },
+            500
+          );
+          $("#checkbtn4").animate(
+            {
+              width: "30px",
+              height: "30px",
+            },
+            500
+          );
+        }
+        function changebtn5() {
+          $("#checkbtn5").attr("src", "/mfm/check2.png");
+          $("#checkbtn5").animate(
+            {
+              width: "40px",
+              height: "40px",
+            },
+            500
+          );
+          $("#checkbtn5").animate(
+            {
+              width: "30px",
+              height: "30px",
+            },
+            500
+          );
+        }
+      </script>
+    </div>
+    <div id="footer">
+      <p>ⓒ Team Six</p>
+      <p class="github">https://github.com/MindFulMind/mind.git</p>
+    </div>
+  </body>
+</html>
