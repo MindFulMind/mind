@@ -61,7 +61,6 @@
 }
 
 .submenu li{
-    font-family: 'Lora', serif;
     font-weight: 700;
     padding-top: 20px;
 }
@@ -111,6 +110,8 @@
     padding-bottom: 15px;
     font-size: 20px;
     text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
 }
 
 .info-sub{
